@@ -55,6 +55,7 @@ function editTodo(index) {
   inputTodo.value = TodoArry[index];
   deleteTodo(index);
   AddTodo.textContent = "Update Todo";
+  inputTodo.focus();
 }
 
 Todo_show();
