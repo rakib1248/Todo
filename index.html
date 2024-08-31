@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-slate-900 font-serif">
+    <header class="bg-slate-500 border-b sticky">
+      <div class="flex justify-between items-center md:w-3/4 md:mx-auto">
+        <div class="logo">
+          <img src="./src/img/logo.webp" alt="" />
+        </div>
+        <div class="nav">
+          <ul class="flex gap-2">
+            <li><a class="text-white text-lg" href="#">Home</a></li>
+            <li><a class="text-white text-lg" href="#">About</a></li>
+            <li><a class="text-white text-lg" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Todo list stackture -->
+    <div class="flex h-screen items-start my-10 justify-center">
+      <div
+        class="md:w-96 md:mx-auto bg-slate-500 py-6 px-6 shadow rounded text-center"
+      >
+        <h1 class="font-semibold text-white text-2xl mb-8">To-Do List</h1>
+        <div class="formSection">
+          <form action="">
+            <input
+              id="inputTodo"
+              type="text"
+              class="rounded p-3 w-80 mx-auto focus:outline-none"
+              placeholder="Type Your Todo"
+            />
+            <button
+              id="AddTodo"
+              class="block text-center w-80 mx-auto mt-4 bg-blue-500 py-2 text-white rounded hover:transition hover:bg-blue-300"
+            >
+              Add Todo
+            </button>
+          </form>
+
+          <ul id="TodoListItem"></ul>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="text-white text-center bg-slate-500 py-2 fixed bottom-1 w-full"
+    >
+      <p>©2005-2024 Ministry of Rakibul, All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
